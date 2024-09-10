@@ -26,7 +26,7 @@ jobs:
         id: build-container
         uses: redhat-actions/buildah-build@v2
         with:
-          image: ghcr.io/onemorebyte/hydroxide
+          image: ghcr.io/${{ github.actor }}/hydroxide
           tags: latest ${{ env.HYDROXIDE_VERSION }}-${{ env.SHA_SHORT }} ${{ env.HYDROXIDE_VERSION }}
           containerfiles: |
             ./Containerfile
