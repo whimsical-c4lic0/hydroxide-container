@@ -4,7 +4,7 @@ COPY ./hydroxide /go/src/hydroxide
 WORKDIR /go/src/hydroxide
 RUN GO111MODULE=on go build /go/src/hydroxide/cmd/hydroxide
 
-FROM docker.io/alpine:3.20
+FROM docker.io/alpine:3.22
 
 LABEL org.opencontainers.image.url="https://github.com/OneMoreByte/hydroxide-container"
 LABEL org.opencontainers.image.documentation="https://github.com/OneMoreByte/hydroxide-container"
